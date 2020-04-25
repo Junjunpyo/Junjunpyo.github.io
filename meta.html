@@ -1,8 +1,6 @@
 <!DOCTYPE html>
  <head>
    <meta charset="utf-8">
-
-   <meta name="viewport" content="width=device-width, initial-scale=0">
    <title>TCP Junjunpyo</title>
    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
@@ -32,10 +30,11 @@
 }
 
 .cvr-img {
-       background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.6)),url(pics/blackwed2.jpg) ;
+       background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.6)),url(pics/blackwedow.jpg) ;
        background-position: center center;
        background-repeat: repeat;
        background-attachment: fixed;
+       background-size: 100%;
 
 }
 
@@ -114,11 +113,20 @@
 }
 
 
+html {
+  height:100%;
+}
+
+
+.sagad {
+  min-height:100%
+}
+
  </style>
  </head>
 
-    <body class="box cvr-img topless bottomless">
-      <div class="container has-background-grey-lighter">
+    <body class="box cvr-img topless bottomless sagad">
+      <div class="container has-background-grey-lighter sagad">
       <header class="hero is-small bg-img is-dark">
         <div class="hero-head container">
           <nav class="navbar">
@@ -185,13 +193,13 @@
       </div>
 
     </header>
-    <section class="section">
+    <section class="section ">
       <div class="box">
-        <text class="is-size-5">
+        <text class="is-size-5 center">
         Think you got what it takes? join one of our all-pinoy alliances below!
         </text>
-          <div class="tile is-ancestor ">
-           <div class="tile is-vertical is-6">
+          <div class="tile is-ancestor center">
+           <div class="tile is-vertical is-8">
             <article class="tile is-parent">
               <div class="tile is-child notification alliance1img is-danger">
                 <h1 class="has-background-light has-text-grey standout is-unselectable">C 360</h1></br>
@@ -219,58 +227,60 @@
                   <p class="has-background-grey-lighter has-text-black standoutsub is-unselectable"> ABX Score req: 6M </p>
               </div>
             </article>
-          </div>
-          <article class="tile is-parent">
-            <div class="tile is-child notification mfftiles is-unselectable">
 
-<div class="mySlides fade">
-<img src="pics/aboutpage/guidebook1.jpg" style="width:100%">
-</div>
+            <article class="tile is-parent">
+              <div class="tile is-child notification mfftiles is-unselectable">
 
-<div class="mySlides fade">
-<img src="pics/aboutpage/guidebook2.jpg" style="width:100%">
-</div>
+  <div class="mySlides fade">
+  <img src="pics/aboutpage/guidebook1.jpg" style="width:100%">
+  </div>
 
-<div class="mySlides fade">
-<img src="pics/aboutpage/guidebook3.jpg" style="width:100%">
-</div>
+  <div class="mySlides fade">
+  <img src="pics/aboutpage/guidebook2.jpg" style="width:100%">
+  </div>
 
-<div class="mySlides fade">
-<img src="pics/aboutpage/guidebook4.jpg" style="width:100%">
-</div>
+  <div class="mySlides fade">
+  <img src="pics/aboutpage/guidebook3.jpg" style="width:100%">
+  </div>
 
-<div class="mySlides fade">
-<img src="pics/aboutpage/guidebook5.jpg" style="width:100%">
-</div>
+  <div class="mySlides fade">
+  <img src="pics/aboutpage/guidebook4.jpg" style="width:100%">
+  </div>
 
-<div class="mySlides fade">
-<img src="pics/aboutpage/guidebook6.jpg" style="width:100%">
-</div>
+  <div class="mySlides fade">
+  <img src="pics/aboutpage/guidebook5.jpg" style="width:100%">
+  </div>
 
-  <script>
-    var slideIndex = 0;
- showSlides();
+  <div class="mySlides fade">
+  <img src="pics/aboutpage/guidebook6.jpg" style="width:100%">
+  </div>
+
+    <script>
+      var slideIndex = 0;
+   showSlides();
 
 
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 6000); // Change image every 2 seconds
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 6000); // Change image every 2 seconds
-}
 
- </script>
+   </script>
 
 
-            </div>
-          </article>
+              </div>
+            </article>
 
+
+          </div>
 
 
           </div>

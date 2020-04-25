@@ -34,7 +34,7 @@
 }
 
 .cvr-img {
-       background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.6)),url(pics/blackwed2.jpg) ;
+       background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.6)),url(pics/blackwedow.jpg) ;
        background-position: center center;
        background-repeat: repeat;
        background-attachment: fixed;
@@ -50,11 +50,20 @@
   margin-bottom:0;
   padding-bottom:0;
 }
+
+html {
+  height:100%;
+}
+
+
+.sagad {
+  min-height:100%
+}
  </style>
  </head>
 
-    <body class="box cvr-img topless bottomless">
-      <div class="container has-background-grey-lighter">
+    <body class="box cvr-img topless bottomless sagad">
+      <div class="container has-background-grey-lighter sagad">
       <header class="hero is-small bg-img is-dark">
         <div class="hero-head container">
           <nav class="navbar">
@@ -114,7 +123,7 @@
             <ul class="text">
               <li><a href="index.html">Patch Notes/Updates</a></li>
               <li><a href="meta.html">Alliances</a></li>
-              <li class="is-active"><a>Guides</a></li>
+              <li class="has-background-grey-lighter nigg"><a class="has-text-dark">Guides</a></li>
               <li><a href="shop.html">TCP Streamers</a></li>
             </ul>
           </div>
@@ -122,17 +131,20 @@
       </div>
 
     </header>
-    <div class="hero has-background-white">
+    <div class="hero has-background-grey-lighter">
     <section class="hero">
       <div class="hero-body">
 
 
-        <div class="tile is-parent">
-          MFF Guides and Videos (From our Alliance Members!)
-        </div>
-    <div class="tile is-ancestor">
 
-      <div class="tile is-vertical is-7">
+    <div class="tile is-ancestor center">
+
+      <div class="tile is-vertical is-9">
+        <div class="tile is-parent center has-background-dark standoutvid is-12">
+          <div class="tile is-child notification">
+          <h1 class="center is-size-5">MFF Guides and Videos (From our Alliance Members!)</h1>
+        </div>
+        </div>
     <article class="tile is-parent">
       <div class="tile is-child notification">
         <h1>Character Tier List</h1>
@@ -178,25 +190,31 @@
       <p>Bronze Division</p>
         </div>
     </article>
-    </div>
-    <div class="tile is-5 has-background-black standoutvid">
-      <div class="tile is-vertical is-parent">
-          <h1 class="center is-size-4 has-text-light">Hot Topic Videos</h1>
-
-          <div class="tile is-child standoutvid has-background-black center">
-
-            <iframe class="standoutvid" height=100% width=100% src="https://www.youtube.com/embed/wOvFo54GVCQ" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <div class="tile is-child standoutvid has-background-grey center">
-
-          <iframe class="standoutvid" height=100% width=100% src="https://www.youtube.com/embed/fu4hXX1XhzU" frameborder="0" allowfullscreen></iframe>
-          </div>
-
-          <div class="tile is-child standoutvid has-background-grey center">
-
-          <iframe class="standoutvid" height=100% width=100% src="https://www.youtube.com/embed/F7SUjtnQX4E" frameborder="0" allowfullscreen></iframe>
-          </div>
+    <div class="tile is-parent is-12 center has-background-black standoutvid">
+      <div class=" standoutvid">
+        <h1 class="center is-size-4 has-text-light">Hot Topic Videos</h1>
       </div>
+    </div>
+
+      <div class="tile is-parent">
+        <div class="tile is-child standoutvid has-background-grey center">
+          <iframe class="standoutvid" height=100% width=100% src="https://www.youtube.com/embed/wOvFo54GVCQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+          <div class="tile is-parent">
+        <div class="tile is-child standoutvid has-background-grey center">
+        <iframe class="standoutvid" height=100% width=100% src="https://www.youtube.com/embed/fu4hXX1XhzU" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+          <div class="tile is-parent">
+        <div class="tile is-child standoutvid has-background-grey center">
+        <iframe class="standoutvid" height=100% width=100% src="https://www.youtube.com/embed/F7SUjtnQX4E" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
 
     </div>
     </div>
